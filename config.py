@@ -1,9 +1,15 @@
 import os
+from dotenv import load_dotenv
 
-BINANCE_API_KEY = os.getenv("BINANCE_API_KEY")
-BINANCE_API_SECRET = os.getenv("BINANCE_API_SECRET")
+load_dotenv()
+
+# Public API - No authentication needed
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
 CHAT_ID = os.getenv("CHAT_ID")
+WHATSAPP_GROUP_ID = os.getenv("WHATSAPP_GROUP_ID")
+EMAIL_ADDRESS = os.getenv("EMAIL_ADDRESS")
+EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD")
+EMAIL_RECIPIENT = os.getenv("EMAIL_RECIPIENT")
 
 RSI_PERIOD = 14
 TOP_COINS_LIMIT = 100
